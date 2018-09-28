@@ -34,8 +34,7 @@ requires
   rtl,
   vcl,
   dbrtl,
-  vcldb,
-  BCEditor.Delphi.Runtime;
+  vcldb;
 
 contains
   BCEditor.Delphi.Designtime in 'BCEditor.Delphi.Designtime.pas';

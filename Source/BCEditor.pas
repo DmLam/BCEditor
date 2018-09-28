@@ -6086,7 +6086,7 @@ begin
   else if (ALinesPosition.Line >= FLines.Count) then
     Result := RowsPosition(ALinesPosition.Char, FRows.Count + ALinesPosition.Line - FLines.Count)
   else if (FLines.Items[ALinesPosition.Line].FirstRow < 0) then
-    raise ERangeError.CreateFmt(SLineIsNotVisible, [ALinesPosition.Line])
+    Result := RowsPosition(LColumn, ALinesPosition.Char )
   else
   begin
     LRow := FLines.Items[ALinesPosition.Line].FirstRow;
